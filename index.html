@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Conjunto cerrado</title>
+		<meta charset="utf-8">
+	
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+</script>
+
+
+</head>
+<body>
+
+<!-- START HEADER-->
+ <nav class="menu navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    
+     <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
+          <span class="line icon-bar"></span>
+          <span class="line icon-bar"></span>
+          <span class="line icon-bar"></span>                   
+      </button>
+      <a class="logo navbar-brand" href="#"><p><span class="logo glyphicon glyphicon-home">
+        </span>&nbsp;CONJUNTO IBIZA</p></a>
+    </div>
+   
+   
+    <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav navbar-right">
+        <li><p>Hola, bienvenido <span>Nombre Apellido</span> </p></li>
+        <li><p> <a href="#"><span class="glyphicon glyphicon-log-out"></span>&nbsp;Salir</a></p></li>
+      </ul>
+      </div>
+  </div>
+</nav>
+
+<!-- END HEADER-->
+
+<div class="container-fluid">            
+  <div id="panel" role="tabpanel">
+      <ul id="ficha" class=" nav nav-tabs" role="tablist">
+          <li role="prensentation"><a href="#" id="section_1" aria-controls="section_1" data-toggle="tab" role="tab">Inicio</a></li>
+          <li role="prensentation"><a href="#" id="section_2" aria-controls="section_2" data-toggle="tab" role="tab">Facturas</a></li>
+          <li role="prensentation"><a href="#" id="section_3" aria-controls="section_3" data-toggle="tab" role="tab">Datos personales</a></li>
+          <li role="prensentation"><a href="#" id="section_4" aria-controls="section_4" data-toggle="tab" role="tab">secunts #4</a></li>
+      </ul>
+      
+      <div class="tab-content" id="contenedor">
+    
+      </div>
+      </div>
+  </div>
+
+<script type="text/javascript">
+	$("#section_1").click(function(event){
+		$("#contenedor").load("section_1.html");
+	});
+    
+	$("#section_2").click(function(event){
+		$("#contenedor").load("section_2.html");
+	});
+    
+    $("#section_3").click(function(event){
+		$("#contenedor").load("section_3.html");
+	});
+    
+    $("#section_4").click(function(event){
+		$("#contenedor").load("selecciones/colombia.html");
+	});
+
+</script>
+
+ </body>
+</html>
